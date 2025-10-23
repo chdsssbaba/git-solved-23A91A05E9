@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+# System Architecture
 # System Architecture
 
 ## Overview
@@ -41,3 +43,4 @@ DevOps Simulator follows a microservices architecture designed for high availabi
 
 ## Experimental (Not Production-Ready)
 The conflict-simulator branch proposes advanced, AI/ML-driven and multi-cloud features (predictive auto-scaling, distributed DB clusters, event streaming, chaos engineering). These are tracked as experimental ideas and are disabled by default behind feature flags. They should not be used in production until validated.
+>>>>>>> d3dd9b2 (updating conflict-simulator)

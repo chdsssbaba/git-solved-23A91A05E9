@@ -1,32 +1,42 @@
+<<<<<<< HEAD
 application:
   name: DevOpsSimulator
   version: 1.0.0
   environment: production
   
 server:
-  host: 0.0.0.0
-  port: 8080
-  ssl_enabled: true
+  application:
+    name: DevOpsSimulator
+    version: 1.0.0
+    environment: production
   
-logging:
-  level: INFO
-  format: json
-  
-# Development configuration (enabled via environment variable)
-development:
-  enabled: false
-  port: 3000
-  hot_reload: false
-  debug_mode: false
-  mock_apis: false
-  
-# Experimental configuration (disabled by default; NOT production-ready)
-experimental:
-  enabled: false
-  notes: "Experimental AI/ML features are behind a feature flag and not production-ready."
   server:
-    port: 9000
-  ai_features:
-    predictive_scaling: false
-    anomaly_detection: false
-    auto_optimization: false
+    host: 0.0.0.0
+    port: 8080
+    ssl_enabled: true
+  
+  logging:
+    level: INFO
+    format: json
+  
+  # Development configuration (enabled via environment variable)
+  development:
+    enabled: false
+    port: 3000
+    hot_reload: false
+    debug_mode: false
+    mock_apis: false
+  
+  # Experimental configuration (disabled by default; NOT production-ready)
+  experimental:
+    enabled: false
+    notes: "Experimental AI/ML features are behind a feature flag and not production-ready."
+    server:
+      port: 9000
+    ai_features:
+      predictive_scaling: false
+      anomaly_detection: false
+      auto_optimization: false
+  encryption: AES-256
+  audit_logging: comprehensive
+>>>>>>> d3dd9b2 (updating conflict-simulator)
