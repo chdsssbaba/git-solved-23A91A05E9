@@ -1,1 +1,0 @@
-- Copied from root CHANGELOG.md for convenience inside DevOpsSimulator package.
