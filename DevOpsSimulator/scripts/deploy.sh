@@ -1,9 +1,13 @@
 #!/bin/bash
 set -euo pipefail
 
-# Multi-Environment Deploy Script
+# Multi-Environment Deploy Script (script-dir aware)
 # Default to production if not specified
 DEPLOY_ENV=${DEPLOY_ENV:-production}
+
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+PROJECT_DIR=$(cd "$SCRIPT_DIR/.." && pwd)
+CONFIG_DIR="$PROJECT_DIR/config"
 
 echo "====================================="
 echo "DevOps Simulator - Deployment"
@@ -11,8 +15,8 @@ echo "====================================="
 
 # Pre-deployment checks
 echo "Running pre-deployment checks..."
-if [ ! -f "config/app-config.yaml" ]; then
-    echo "Error: Configuration file not found!"
+if [ ! -f "$CONFIG_DIR/app-config.yaml" ]; then
+    echo "Error: Configuration file not found at $CONFIG_DIR/app-config.yaml!"
     exit 1
 fi
 

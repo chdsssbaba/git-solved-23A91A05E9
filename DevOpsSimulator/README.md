@@ -4,9 +4,7 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 
 ## Project Status
 - **Version**: 1.0.0 (Production), 2.0.0-beta (Development)
-- **Environments**: Production & Development
-- **Student**: [YOUR NAME]
-- **Student ID**: [YOUR ID]
+- **Environments**: Production, Development, Experimental (disabled by default)
 
 ## Features
 
@@ -30,7 +28,6 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 - Mock external APIs
 
 ### Experimental Features (Disabled by default)
-The conflict-simulator branch introduces AI/ML and multi-cloud ideas. These are behind feature flags and NOT production-ready:
 - AI-powered deployment optimization (flag: AI_OPTIMIZATION)
 - Predictive scaling and anomaly detection
 - Multi-cloud orchestration concepts
@@ -61,18 +58,14 @@ export CHAOS_TESTING=false
 ```
 
 ## Documentation
-See `/docs` folder for detailed documentation. Experimental notes are summarized in `docs/architecture.md` and are disabled by default.
+See `/docs` folder for detailed documentation. Experimental notes are summarized in `docs/architecture.md`.
 
 ## Checkpoints
-Place your screenshots under `docs/images/` and they will render below.
+Place your screenshots under `../docs/images/` relative to this README or use absolute repo paths.
 
-![Checkpoint 1](docs/images/checkpoint1.png)
-![Checkpoint 2](docs/images/checkpoint2.png)
-![Checkpoint 3](docs/images/checkpoint3.png)
-
-## Contributing
-Please read CONTRIBUTING.md before submitting pull requests.
+![Checkpoint 1](../docs/images/checkpoint1.png)
+![Checkpoint 2](../docs/images/checkpoint2.png)
+![Checkpoint 3](../docs/images/checkpoint3.png)
 
 ## License
 MIT License
- 

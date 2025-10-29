@@ -13,7 +13,6 @@ logging:
   format: json
 
 profiles:
-  # Development configuration (enable by setting DEPLOY_ENV=development)
   development:
     enabled: false
     server:
@@ -22,7 +21,6 @@ profiles:
     debug_mode: false
     mock_apis: false
 
-  # Experimental configuration (disabled by default; NOT production-ready)
   experimental:
     enabled: false
     notes: "Experimental AI/ML features are behind a feature flag and not production-ready."
