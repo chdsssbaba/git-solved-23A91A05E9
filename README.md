@@ -5,8 +5,8 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 ## Project Status
 - **Version**: 1.0.0 (Production), 2.0.0-beta (Development)
 - **Environments**: Production & Development
-- **Student**: [YOUR NAME]
-- **Student ID**: [YOUR ID]
+- **Student**: CHITTURI DOLA SATYA SIVA SHANKAR BABA
+- **Student ID**: 23A91A05E9
 
 ## Features
 
@@ -69,9 +69,6 @@ Place your screenshots under `docs/images/` and they will render below.
 ![Checkpoint 1](docs/images/checkpoint1.png)
 ![Checkpoint 2](docs/images/checkpoint2.png)
 ![Checkpoint 3](docs/images/checkpoint3.png)
-
-## Contributing
-Please read CONTRIBUTING.md before submitting pull requests.
 
 ## License
 MIT License
