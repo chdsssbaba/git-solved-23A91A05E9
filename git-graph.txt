@@ -1,0 +1,25 @@
+* c77102d (HEAD -> main) docs: Add changelog
+* 7522f66 (origin/main) docs: Add GIT_JOURNEY with conflict resolutions and learnings
+| * 3550487 (origin/feature/another-feature) feat: Add test feature
+|/  
+* 0ea368d (tag: v1.2.0, tag: v1.1.0, tag: v1.0.0, feature/another-feature) docs: Update README
+* a0c8f87 updating conflict-simulator
+| *   bd3586c (refs/stash) On main: temp before cherry-pick
+|/|\  
+| | * 8821506 untracked files on main: 0b1a839 docs: Add FAQ section
+| * ddf1f17 index on main: 0b1a839 docs: Add FAQ section
+|/  
+* 0b1a839 docs: Add FAQ section
+| * 3bed7b7 (origin/feature/new-feature, feature/new-feature) feat: Add new feature
+|/  
+*   bf3e136 merge: Resolve conflicts with conflict-simulator branch using feature flags\n\n- config/app-config.yaml: Kept production primary; added experimental section behind disabled flag\n- config/database-config.json: Preserved production/dev profiles; added separate experimental profile\n- scripts/deploy.sh: Unified script; optional experimental flow guarded by env flags\n- scripts/monitor.js: Added experimental mode behind flag; kept prod/dev stable\n- docs/architecture.md: Documented experimental ideas as non-production\n- README.md: Added Experimental Features section and usage notes\n\nStrategy: Maintain backward compatibility and production stability; integrate experimental features as optional and disabled by default.
+|\  
+| * d3dd9b2 (instructor/conflict-simulator, conflict-simulator) updating conflict-simulator
+* |   af6d5fe merge: Resolve all conflicts between main and dev branches
+|\ \  
+| * | 02011a5 (instructor/dev) updating dev
+| |/  
+* | 0312c6f (instructor/main, instructor/HEAD) updating main
+* | fadfd24 Revise README for DevOps Simulator project
+|/  
+* ae630eb Initial commit
