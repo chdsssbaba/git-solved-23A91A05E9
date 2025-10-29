@@ -73,4 +73,3 @@ Place your screenshots under `docs/images/` and they will render below.
 ## License
 MIT License
  
-typo
