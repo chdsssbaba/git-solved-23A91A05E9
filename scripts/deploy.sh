@@ -50,6 +50,36 @@ elif [ "$DEPLOY_ENV" = "development" ]; then
     echo "Performing health check..."
     curl -f http://localhost:$APP_PORT/health || exit 1
     
+elif [ "$DEPLOY_ENV" = "experimental" ]; then
+    echo "Mode: Experimental (NOT production-ready)"
+    DEPLOY_STRATEGY="canary"
+    APP_PORT=9000
+    AI_OPTIMIZATION=${AI_OPTIMIZATION:-false}
+    CHAOS_TESTING=${CHAOS_TESTING:-false}
+    echo "Environment: $DEPLOY_ENV"
+    echo "Strategy: $DEPLOY_STRATEGY"
+    echo "AI Optimization: $AI_OPTIMIZATION"
+    echo "Chaos Testing: $CHAOS_TESTING"
+
+    echo "Skipping heavy AI tooling by default. Enable by setting AI_OPTIMIZATION=true."
+    if [ "$AI_OPTIMIZATION" = true ]; then
+        echo "(Placeholder) Run AI pre-deployment analysis..."
+        # python3 scripts/ai-analyzer.py --analyze-deployment
+        echo "AI analysis step completed (simulated)."
+    fi
+
+    echo "Starting canary rollout (simulated)..."
+    echo "- 10% traffic"
+    sleep 1
+    echo "- 50% traffic"
+    sleep 1
+    echo "- 100% traffic"
+
+    if [ "$CHAOS_TESTING" = true ]; then
+        echo "(Placeholder) Running chaos experiments..."
+        # chaos-monkey run
+    fi
+
 else
     echo "Error: Unknown environment $DEPLOY_ENV"
     exit 1

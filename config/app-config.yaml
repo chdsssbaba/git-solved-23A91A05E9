@@ -20,3 +20,13 @@ development:
   debug_mode: false
   mock_apis: false
   
+# Experimental configuration (disabled by default; NOT production-ready)
+experimental:
+  enabled: false
+  notes: "Experimental AI/ML features are behind a feature flag and not production-ready."
+  server:
+    port: 9000
+  ai_features:
+    predictive_scaling: false
+    anomaly_detection: false
+    auto_optimization: false
